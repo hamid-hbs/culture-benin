@@ -14,7 +14,7 @@ class UserSeeder extends Seeder
             'nom'              => 'COMLAN',
             'prenom'           => 'Maurice',
             'email'            => 'maurice.comlan@uac.bj',
-            'mot_de_passe'     => Hash::make('admin1234'), // mot de passe
+            'mot_de_passe'     => Hash::make('Eneam123'), // mot de passe
             'sexe'             => 'M',
             'statut'           => 'Actif',
             'id_role'          => 4, // ADMIN
