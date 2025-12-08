@@ -10,7 +10,6 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
 use App\Notifications\TwoFactorCodeNotification;
 use App\Models\User;
-use Illuminate\Validation\ValidationException;
 
 class AuthenticatedSessionController extends Controller
 {
@@ -27,15 +26,7 @@ class AuthenticatedSessionController extends Controller
      */
     public function store(LoginRequest $request): RedirectResponse
     {
-        if (! Auth::attempt([
-            'email' => $request->email,
-            'mot_de_passe' => $request->mot_de_passe,
-        ], $request->boolean('remember'))) {
-            throw ValidationException::withMessages([
-                'email' => __('auth.failed'),
-            ]);
-        }
-
+        $request->authenticate();
         $request->session()->regenerate();
 
         $user = Auth::user();
@@ -43,8 +34,8 @@ class AuthenticatedSessionController extends Controller
         // Générer et envoyer le code 2FA
         $user->generateTwoFactorCode();
         $user->notify(new TwoFactorCodeNotification(
-            $user->two_factor_code, 
-            $user->two_factor_expires_at
+        $user->two_factor_code, 
+        $user->two_factor_expires_at
         ));
 
         // Rediriger vers la page de vérification 2FA
