@@ -829,7 +829,7 @@ body {
                             @if($contenu->hasVideo())
                                 <!-- Vidéo -->
                                 <video class="video-player" controls preload="metadata">
-                                    <source src="{{ asset($contenu->media->chemin) }}" 
+                                    <source src="{{ asset('storage/' . $contenu->media->chemin) }}" 
                                             type="video/{{ pathinfo($contenu->media->chemin, PATHINFO_EXTENSION) }}">
                                 </video>
                                 <div class="media-play-overlay">
@@ -844,7 +844,7 @@ body {
                                 </div>
                             @elseif($contenu->hasImage())
                                 <!-- Image -->
-                                <img src="{{ asset($contenu->media->chemin) }}" 
+                                <img src="{{ asset('storage/' . $contenu->media->chemin) }}" 
                                      alt="{{ $contenu->titre }}"
                                      loading="lazy">
                                 <div class="media-type-badge">

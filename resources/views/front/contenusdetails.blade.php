@@ -621,12 +621,12 @@
                     <div class="media-display">
                         @if($contenu->hasVideo())
                             <video controls class="w-100 h-100">
-                                <source src="{{ asset($contenu->media->chemin) }}"
+                                <source src="{{ asset('storage/' . $contenu->media->chemin) }}"
                                         type="video/{{ pathinfo($contenu->media->chemin, PATHINFO_EXTENSION) }}">
                                 Votre navigateur ne supporte pas la lecture vidéo.
                             </video>
                         @elseif($contenu->hasImage())
-                            <img src="{{ asset($contenu->media->chemin) }}"
+                            <img src="{{ asset('storage/' . $contenu->media->chemin) }}"
                                  alt="{{ $contenu->media->description ?? $contenu->titre }}"
                                  class="img-fluid">
                         @else
