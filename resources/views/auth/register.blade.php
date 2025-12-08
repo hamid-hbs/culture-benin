@@ -337,7 +337,7 @@
         <div class="register-card">
             <div class="card-header">
                 <h1>
-                    <img src="{{ asset('storage/photos/culture.jpg') }}" alt="Logo Culture Bénin" class="logo-image">
+                    <img src="{{ asset('images/culture.jpg') }}" alt="Logo Culture Bénin" class="logo-image">
                     Culture Bénin
                 </h1>
                 <p>Rejoignez notre communauté Culture Bénin</p>

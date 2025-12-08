@@ -115,7 +115,7 @@
     <div class="container">
 
         <a class="navbar-brand navbar-brand-custom" href="{{ url('/') }}">
-            <img src="{{ asset('storage/photos/culture.jpg') }}" alt="Logo Culture Bénin" class="logo-image">
+            <img src="{{ asset('images/culture.jpg') }}" alt="Logo Culture Bénin" class="logo-image">
             Culture Bénin
         </a>
 

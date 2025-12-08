@@ -748,22 +748,22 @@ body {
                 
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="4000">
-                        <img src="{{ asset('photos/drapeau.jpg') }}" class="d-block w-100" alt="Drapeau du Bénin">
+                        <img src="{{ asset('images/drapeau.jpg') }}" class="d-block w-100" alt="Drapeau du Bénin">
                     </div>
                     <div class="carousel-item" data-bs-interval="4000">
-                        <img src="{{ asset('photos/amazone.jpg') }}" class="d-block w-100" alt="Amazones du Bénin">
+                        <img src="{{ asset('images/amazone.jpg') }}" class="d-block w-100" alt="Amazones du Bénin">
                     </div>
                     <div class="carousel-item" data-bs-interval="4000">
-                        <img src="{{ asset('photos/egoun.jpg') }}" class="d-block w-100" alt="Masques Egoun">
+                        <img src="{{ asset('images/egoun.jpg') }}" class="d-block w-100" alt="Masques Egoun">
                     </div>
                     <div class="carousel-item" data-bs-interval="4000">
-                        <img src="{{ asset('photos/chevaux.jpeg') }}" class="d-block w-100" alt="Chevaux de parade">
+                        <img src="{{ asset('images/chevaux.jpeg') }}" class="d-block w-100" alt="Chevaux de parade">
                     </div>
                     <div class="carousel-item" data-bs-interval="4000">
-                        <img src="{{ asset('photos/ablo.jpg') }}" class="d-block w-100" alt="Art Ablo">
+                        <img src="{{ asset('images/ablo.jpg') }}" class="d-block w-100" alt="Art Ablo">
                     </div>
                     <div class="carousel-item" data-bs-interval="4000">
-                        <img src="{{ asset('photos/agoun.png') }}" class="d-block w-100" alt="Cérémonie Agoun">
+                        <img src="{{ asset('images/agoun.png') }}" class="d-block w-100" alt="Cérémonie Agoun">
                     </div>
                 </div>
             </div>

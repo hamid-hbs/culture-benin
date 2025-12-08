@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Culture du Bénin</title>
-    <link rel="icon" type="image/png" href="{{ asset('storage/photos/culture.jpg') }}">
+    <link rel="icon" type="image/png" href="{{ asset('images/culture.jpg') }}">
 
     <!--begin::Accessibility Meta Tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
@@ -107,7 +107,7 @@
             <li class="nav-item dropdown user-menu">
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                 <img
-                  src="{{ Auth::user()->photo ? asset('storage/' . Auth::user()->photo) : asset('storage/photos/default.jpg') }}"
+                  src="{{ Auth::user()->photo ? asset('storage/' . Auth::user()->photo) : asset('images/default.jpg') }}"
                   class="user-image rounded-circle shadow"
                   alt="User Image"
                 />
@@ -118,7 +118,7 @@
     <!-- USER HEADER -->
     <li class="user-header text-bg-primary">
         <img
-            src="{{Auth::user()->photo ? asset('storage/' . Auth::user()->photo) : asset('storage/photos/default.jpg') }}"
+            src="{{Auth::user()->photo ? asset('storage/' . Auth::user()->photo) : asset('images/default.jpg') }}"
             class="rounded-circle shadow"
             alt="User Image"
         />
@@ -171,7 +171,7 @@
           <a href="/admin" class="brand-link">
             <!--begin::Brand Image-->
             <img
-              src="{{ asset('storage/photos/culture.jpg') }}"
+              src="{{ asset('images/culture.jpg') }}"
               alt="Logo"
               class="brand-image opacity-75 shadow"
             />
