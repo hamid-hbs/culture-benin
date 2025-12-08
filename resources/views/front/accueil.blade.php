@@ -748,22 +748,22 @@ body {
                 
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="4000">
-                        <img src="{{ asset('storage/photos/drapeau.jpg') }}" class="d-block w-100" alt="Drapeau du Bénin">
+                        <img src="{{ asset('public/photos/drapeau.jpg') }}" class="d-block w-100" alt="Drapeau du Bénin">
                     </div>
                     <div class="carousel-item" data-bs-interval="4000">
-                        <img src="{{ asset('storage/photos/amazone.jpg') }}" class="d-block w-100" alt="Amazones du Bénin">
+                        <img src="{{ asset('public/photos/amazone.jpg') }}" class="d-block w-100" alt="Amazones du Bénin">
                     </div>
                     <div class="carousel-item" data-bs-interval="4000">
-                        <img src="{{ asset('storage/photos/egoun.jpg') }}" class="d-block w-100" alt="Masques Egoun">
+                        <img src="{{ asset('public/photos/egoun.jpg') }}" class="d-block w-100" alt="Masques Egoun">
                     </div>
                     <div class="carousel-item" data-bs-interval="4000">
-                        <img src="{{ asset('storage/photos/chevaux.jpeg') }}" class="d-block w-100" alt="Chevaux de parade">
+                        <img src="{{ asset('public/photos/chevaux.jpeg') }}" class="d-block w-100" alt="Chevaux de parade">
                     </div>
                     <div class="carousel-item" data-bs-interval="4000">
-                        <img src="{{ asset('storage/photos/ablo.jpg') }}" class="d-block w-100" alt="Art Ablo">
+                        <img src="{{ asset('public/photos/ablo.jpg') }}" class="d-block w-100" alt="Art Ablo">
                     </div>
                     <div class="carousel-item" data-bs-interval="4000">
-                        <img src="{{ asset('storage/photos/agoun.png') }}" class="d-block w-100" alt="Cérémonie Agoun">
+                        <img src="{{ asset('public/photos/agoun.png') }}" class="d-block w-100" alt="Cérémonie Agoun">
                     </div>
                 </div>
             </div>
