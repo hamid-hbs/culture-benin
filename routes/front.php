@@ -17,9 +17,9 @@ Route::get('/', function () {
     return view('front.accueil');
 });
 
-Route::get('/two-factor', [TwoFactorController::class, 'showVerifyForm'])->name('two-factor.showVerifyForm');
-Route::post('/two-factor', [TwoFactorController::class, 'verifyCode'])->name('two-factor.verify');
-Route::post('/two-factor/resend', [TwoFactorController::class, 'sendCode'])->name('two-factor.send');
+Route::get('/two-factor', [TwoFactorController::class, 'showVerifyForm'])->name('two-factor.showVerifyForm')->middleware('auth');
+Route::post('/two-factor', [TwoFactorController::class, 'verifyCode'])->name('two-factor.verify')->middleware('auth');
+Route::post('/two-factor/resend', [TwoFactorController::class, 'sendCode'])->name('two-factor.send')->middleware('auth');
 
 Route::get('/', [ContenusController::class, 'accueil'])->name('contenusaccueil');
 Route::get('/contenus/{id}/details', [ContenusController::class, 'details'])->name('contenusdetails');
