@@ -71,15 +71,6 @@ class TwoFactorController extends Controller
         // Marquer l'utilisateur comme 2FA validé
         Session::put('user_2fa', Auth::id());
 
-        // ✅ REDIRECTION EN FONCTION DU RÔLE (comme dans votre ancien contrôleur)
-        if (!Auth::check()) {
-            return redirect('/'); // page d'accueil si non authentifié
-        }
-    
-        if (Auth::user()->id_role === 4) {
-            return redirect()->intended(route('home', absolute: false));
-        }
-
-        return redirect()->intended(route('contenustous', absolute: false));
+        
     }
 }

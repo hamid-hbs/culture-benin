@@ -39,7 +39,17 @@ class AuthenticatedSessionController extends Controller
         ));
 
         // Rediriger vers la page de vérification 2FA
-        return redirect()->route('two-factor.showVerifyForm');
+        //return redirect()->route('two-factor.showVerifyForm');
+        // ✅ REDIRECTION EN FONCTION DU RÔLE (comme dans votre ancien contrôleur)
+        if (!Auth::check()) {
+            return redirect('/'); // page d'accueil si non authentifié
+        }
+    
+        if (Auth::user()->id_role === 4) {
+            return redirect()->intended(route('home', absolute: false));
+        }
+
+        return redirect()->intended(route('contenustous', absolute: false));
     }
 
     /**
